@@ -7,7 +7,12 @@
 *.so
 *.dylib
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
+#swap and tmp
+*.swp
+*~
+
+#data
+data/
+
+#tester
+tester/

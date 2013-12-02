@@ -1,4 +1,6 @@
 CamNet
 ======
 
-CamNet is a neural network tool-kit for machine learning tasks.
+CamNet is a neural network toolkit for machine learning tasks.
+
+
