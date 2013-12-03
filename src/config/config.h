@@ -4,26 +4,25 @@
 #include <map>
 #include <string>
 
-using std::map;
-using std::string;
 
-namespace camnet
-{
-class Config
-{
+namespace camnet {
+namespace config {
+
+class Config {
 public:
-    Config(const int argc, const char * argv []); //just put the origin parameters of main function here
+    Config() {}
     virtual ~Config() {}
 
-    string get(const string & key) const;
-    void set(const string & key, const string & value);
+    void idol(const std::string & file_name);
+    void Load(const std::string & file_name);
+    std::string Get(const std::string & key) const;
+    void Set(const std::string & key, const std::string & value);
 
 private:
-    Parse(const string & file_name);
-    
-    map<string, string> params;
+    std::map<std::string, std::string> params;
 };
 
+}
 }
 
 #endif
