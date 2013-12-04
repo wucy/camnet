@@ -4,7 +4,6 @@
 #include <cctype>
 
 namespace camnet {
-namespace util {
 
 extern std::string trim(const std::string & raw_str) {
     size_t sta = 0;
@@ -21,7 +20,6 @@ extern std::string trim(const std::string & raw_str) {
         return "";
 }
 
-}
 }
 
 
