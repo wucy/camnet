@@ -12,7 +12,7 @@ public:
     virtual ~Config() {}
 
     void Load(const std::string & file_name);
-    std::string Get(const std::string & key, std::string def_val = "");
+    std::string Get(const std::string & key, const std::string def_val = "");
     void Set(const std::string & key, const std::string & value);
 
 private:
